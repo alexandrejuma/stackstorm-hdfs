@@ -2,7 +2,8 @@
 
 Interact with HDFS via WebHDFS interface
 
-Tested with Hortonworks Data Platform (HDP) 2.6.4 (HDFS 2.7.3)
+* Tested with Hortonworks Data Platform (HDP) 2.6.4 (HDFS 2.7.3)
+* Using [pywhdfs](https://github.com/yassineazzouz/pywhdfs) library for interacting with WebHDFS and HTTFS Rest API
 
 ## Configuration
 
@@ -86,3 +87,7 @@ truststore: "/path/to/truststore.jks"
 * ``remove_default_acl`` - Removes all default ACL entries from files and directories.
 * ``remove_acl_entries`` - Removes ACL entries from files and directories. Other ACL entries are retained.
 * ``modify_acl_entries`` - Modifies ACL entries of files and directories. This method can add new ACL entries or modify the permissions on existing ACL entries. All existing ACL entries that are not specified in this call are retained without changes.
+
+## Notes
+
+Most methods and parameter descriptions were directly taken from the docstring of [pywhdfs](https://github.com/yassineazzouz/pywhdfs) project 
