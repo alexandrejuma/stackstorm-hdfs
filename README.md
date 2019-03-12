@@ -1,9 +1,9 @@
 # HDFS Integration Pack
 
-Interact with HDFS via WebHDFS interface
+Interact with HDFS (Hadoop Distributed File System) via the WebHDFS REST API
 
 * Tested with Hortonworks Data Platform (HDP) 2.6.4 (HDFS 2.7.3)
-* Using [pywhdfs](https://github.com/yassineazzouz/pywhdfs) library for interacting with WebHDFS and HTTFS Rest API
+* Using [pywhdfs](https://github.com/yassineazzouz/pywhdfs) library for all interaction with WebHDFS and HTTFS Rest API
 
 ## Configuration
 
@@ -90,4 +90,5 @@ truststore: "/path/to/truststore.jks"
 
 ## Notes
 
-Most methods and parameter descriptions were directly taken from the docstring of [pywhdfs](https://github.com/yassineazzouz/pywhdfs) project 
+* Most methods and parameter descriptions were directly taken from the docstring of [pywhdfs](https://github.com/yassineazzouz/pywhdfs) project
+* Apache®, Apache Hadoop, Hadoop®, and the yellow elephant logo are either registered trademarks or trademarks of the Apache Software Foundation in the United States and/or other countries.
