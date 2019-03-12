@@ -1,0 +1,57 @@
+---
+  name: "get_content_summary"
+  runner_type: "python-script"
+  description: "Get ContentSummary_ for a file or folder on HDFS"
+  enabled: true
+  entry_point: "get_content_summary.py"
+  parameters:
+    path:
+      type: "string"
+      description: Remote path to get content summary""
+      required: true
+    strict:
+      type: "boolean"
+      description: "If `False`, return `None` rather than raise an exception if the path doesn't exist"
+    nameservices_url:
+      description: "List of dictionaries specifying the namenodes to connect to, each dict should be a list of hostnames or IP addresses of HDFS namenodes (in HA) and a mount point for it when using hdfs federatio"
+      type: "string"
+    mounts:
+      description: "HDFS Mountpoint"
+      type: "string"
+    user:
+      description: "The username used to connect to the cluster, valid only with NONE authentication"
+      type: "string"
+      required: false
+    auth_mechanism:
+      description: "Authentication Method to use, one of NONE, GSSAPI, TOKEN"
+      type: "string"
+      required: false
+    verify:
+      description: "If the Namenode certificate should be verified or not when using SSL"
+      type: "boolean"
+      required: false
+    mutual_auth:
+      description: "One of OPTIONAL, REQUIRED, DISABLED"
+      type: "string"
+      required: false
+    max_concurrency:
+      description: "Max threads to allow for concurent jobs"
+      type: "number"
+      required: false
+    token:
+      description: "The token to use to authenticate when using token authentication"
+      type: "string"
+      required: false
+    proxy:
+      description: "User to proxy as"
+      type: "string"
+      required: false
+    root:
+      description: "Root path, this will be prefixed to all HDFS paths passed to the client. If the root is relative, the path will be assumed relative to the user's home directory."
+      type: "string"
+      required: false
+    call_timeout:
+      description: "Connection timeouts, forwarded to the request handler"
+      type: "number"
+      required: false
+
