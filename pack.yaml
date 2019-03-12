@@ -1,0 +1,12 @@
+---
+ref: webhdfs
+name: WebHDFS Actions
+description: Pack containing actions to interact with HDFS via WebHDFS.
+keywords:
+    - hadoop
+    - hdfs
+    - webhdfs
+version: 0.1.0
+author: Alexandre Juma
+email: alexandre.juma@gmail.com
+
