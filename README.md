@@ -2,6 +2,8 @@
 
 Interact with HDFS via WebHDFS interface
 
+Tested with Hortonworks Data Platform (HDP) 2.6.4 (HDFS 2.7.3)
+
 ## Configuration
 
 Copy the example configuration in [hdfs.yaml.example](./hdfs.yaml.example)
@@ -22,7 +24,7 @@ All config parameters can be either configured in the configuration file or pass
 * ``verify`` (optional): If the Namenode certificate should be verified or not when using SSL. Defaults to False.
 * ``truststore`` (optional): Path to a Truststore file.
 
-If you have unsecured access to HDFS, you only need to setup **nameservices_url** and **mounts** parameters. 
+If you have unsecured access to HDFS, you only need to setup **nameservices_url**, **mounts** and **user** parameters. 
 
 Configuration example:
 
@@ -54,6 +56,8 @@ truststore: "/path/to/truststore.jks"
 * ``status`` - Get FileStatus_ for a file or folder on HDFS.
 * ``delete`` - Remove a file or directory from HDFS.
 * ``rename`` - Move a file or folder.
+* ``download`` - Download a file or folder from HDFS and save it locally.
+* ``upload`` - Upload a local file or directory to HDFS.
 * ``set_owner`` - Change the owner of file.
 * ``set_permission`` - Change the permissions of file.
 * ``set_times`` - Change remote timestamps.
@@ -71,3 +75,14 @@ truststore: "/path/to/truststore.jks"
 * ``listxattrs`` - List all existing extended attributes on a particular path.
 * ``removexattr`` - Remove an extended attribute.
 * ``setxattr`` - Set or update an extended attribute.
+* ``cancel_delegation_token`` - Cancel an existing delegation token.
+* ``renew_delegation_token`` - Renew an existing delegation token.
+* ``list_delegation_token`` - Get one or more delegation tokens associated with the filesystem.
+* ``get_delegation_token`` - Get a new delegation token for this file system.
+* ``check_access_to_path`` - Checks if the user can access a path. The mode specifies which access checks to perform.
+* ``get_acl_status`` - Get getAclStatus return the ACLS for a file or folder on HDFS.
+* ``set_acl`` - Fully replaces ACL of files and directories, discarding all existing entries.
+* ``remove_acl`` - Removes all but the base ACL entries of files and directories. The entries for user, group, and others are retained for compatibility with permission bits.
+* ``remove_default_acl`` - Removes all default ACL entries from files and directories.
+* ``remove_acl_entries`` - Removes ACL entries from files and directories. Other ACL entries are retained.
+* ``modify_acl_entries`` - Modifies ACL entries of files and directories. This method can add new ACL entries or modify the permissions on existing ACL entries. All existing ACL entries that are not specified in this call are retained without changes.
