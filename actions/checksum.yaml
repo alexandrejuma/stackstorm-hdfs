@@ -3,7 +3,7 @@
   runner_type: "python-script"
   description: "Get a remote file's checksum."
   enabled: true
-  entry_point: "checksum.py"
+  entry_point: "scripts/checksum.py"
   parameters:
     file_path:
       type: "string"

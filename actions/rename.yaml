@@ -3,7 +3,7 @@
   runner_type: "python-script"
   description: "Move a file or folder."
   enabled: true
-  entry_point: "rename.py"
+  entry_point: "scripts/rename.py"
   parameters:
     hdfs_src_path:
       type: "string"

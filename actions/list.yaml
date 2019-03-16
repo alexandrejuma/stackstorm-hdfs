@@ -3,7 +3,7 @@
   runner_type: "python-script"
   description: "Lists the content of an HDFS directory"
   enabled: true
-  entry_point: "list.py"
+  entry_point: "scripts/list.py"
   parameters:
     directory:
       type: "string"

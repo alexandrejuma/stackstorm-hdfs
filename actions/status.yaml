@@ -3,11 +3,11 @@
   runner_type: "python-script"
   description: "Get FileStatus_ for a file or folder on HDFS"
   enabled: true
-  entry_point: "status.py"
+  entry_point: "scripts/status.py"
   parameters:
     path:
       type: "string"
-      description: Remote path to check status""
+      description: "Remote path to check status"
       required: true
     strict:
       type: "boolean"

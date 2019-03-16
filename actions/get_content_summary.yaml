@@ -3,11 +3,11 @@
   runner_type: "python-script"
   description: "Get ContentSummary_ for a file or folder on HDFS"
   enabled: true
-  entry_point: "get_content_summary.py"
+  entry_point: "scripts/get_content_summary.py"
   parameters:
     path:
       type: "string"
-      description: Remote path to get content summary""
+      description: "Remote path to get content summary"
       required: true
     strict:
       type: "boolean"

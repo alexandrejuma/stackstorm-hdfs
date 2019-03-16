@@ -3,11 +3,11 @@
   runner_type: "python-script"
   description: "Remove a file or directory from HDFS"
   enabled: true
-  entry_point: "delete.py"
+  entry_point: "scripts/delete.py"
   parameters:
     path:
       type: "string"
-      description: Remote path to delete""
+      description: "Remote path to delete"
       required: true
     recursive:
       type: "boolean"
