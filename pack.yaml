@@ -1,6 +1,6 @@
 ---
-ref: hdfs
-name: HDFS Actions
+ref: webhdfs
+name: WebHDFS Actions
 description: Pack containing actions to interact with HDFS via WebHDFS.
 keywords:
     - hadoop
