@@ -14,3 +14,8 @@ st2-check-validate-pack-metadata-exists $PACK_DIR
 echo "################# st2-check-print-pack-tests-coverage #################"
 st2-check-print-pack-tests-coverage $PACK_DIR
 
+echo "################# st2-check-register-pack-resources #################"
+st2-check-register-pack-resources $PACK_DIR
+
+echo "################# st2-check-pylint-pack #################"
+st2-check-print-pack-tests-coverage $PACK_DIR
